@@ -1,8 +1,5 @@
-# STATS202HW3
-*Duke Kunshan University STATS 202 HW3*
----
-
 # 📈 AAPL Stock Forecasting using SARIMA with NDAQ as Exogenous Regressor
+*Duke Kunshan University STATS 202 HW3*
 
 ## Introduction
 
