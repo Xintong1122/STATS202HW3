@@ -1,5 +1,6 @@
 # STATS202HW3
-*Duke Kunshan University STATS 202 HW2*
+*Duke Kunshan University STATS 202 HW3*
+---
 
 # 📈 AAPL Stock Forecasting using SARIMA with NDAQ as Exogenous Regressor
 
@@ -7,7 +8,6 @@
 
 This project builds a time series forecasting model to predict AAPL stock prices using a SARIMA model. To improve forecast performance, the model incorporates NDAQ (the Nasdaq index) as an exogenous variable. The goal is to leverage both company-specific and market-level information to better capture the dynamics of AAPL's stock price movement.
 
----
 
 ## Data
 
@@ -18,7 +18,6 @@ The dataset contains daily stock prices for AAPL and NDAQ from 2003 to 2014. It 
 
 Log-transformation was applied to both series to stabilize variance. The data was then split into a training set (before 2014) and a test set (2014 onward). The NDAQ series, intended as an external input to the model, was standardized using `StandardScaler`.
 
----
 
 ## Method
 
@@ -36,7 +35,6 @@ The chosen SARIMA model was trained on the log-transformed AAPL series with the 
 4. **Forecasting**:  
 Forecasts were made on the test period (2014) and exponentiated to return to price scale. Both in-sample fitted values and out-of-sample predictions were evaluated using SMAPE.
 
----
 
 ## Result
 
